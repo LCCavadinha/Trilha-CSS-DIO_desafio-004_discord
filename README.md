@@ -1,27 +1,85 @@
-# Trilha CSS Dio Desafio 004
+# 🎧 Clone Landing Page Discord — Responsivo
 
-## Desafio 004 Reproduzir o site do discord de forma responsiva
+Projeto desenvolvido como desafio da Trilha CSS da DIO com o objetivo de reproduzir a landing page do Discord a partir de um layout no [**Figma**](https://www.figma.com/design/NRBYrG5d4DSzObv7dpTqoM/Desafio-Responsividade---DIO?node-id=1-2&t=av7YmpOxTuk5ikZd-0).
 
-**O projeto foi baseado no [**Figma**](https://www.figma.com/design/NRBYrG5d4DSzObv7dpTqoM/Desafio-Responsividade---DIO?node-id=1-2&t=av7YmpOxTuk5ikZd-0), que por sinal foi um desafio a mais por ter em seu layout principal seções de tamanhos e direções diferentes, mas no fim deu certo, procurei respeitar todos os espaçamentos propostos pelo Figma.
-**Como toque pessoal adaptei de forma responsiva uma barra de navegação no header semelhante a do site oficial do discord, no figma pede que o layout seja adaptado para celular, mas fiz questão de deixar o layout bem adaptado para tablets testanto medida por medida, usei o meu conhecimento de outros projetos e procurei dar uma pequena interação aos botões como uma leve transição, um pequeno sombreamento na tag principal e importei ícones do [**fontawesome**](https://fontawesome.com/) para usar nos botões.
-**Sobre o HTML procurei deixar ele bem semântico, fazendo o uso adequado das tags semânticas.
-**Em Relação ao CSS, fiz o uso de variáveis, revisei o código várias vezes com o intuito de evitar repetição de propriedades e seletores,usei em todo o projeto unidades de medida relativas, fiz o uso tanto do display flex quanto do grid para deixar o layout o mais universal que consegui.
+O foco principal foi construção de layout responsivo, organização estrutural do CSS e aplicação de boas práticas sem dependência de frameworks.
 
-## Ferramentas usadas
+---
 
-**Copilot para:
--Para sugestão de nome de classes e variáveis.
--Descrever o alt das imagens das seções.
+## 🎯 Objetivo
 
-**DevTools:
--Foi fundamental para atingir o objetivo de deixar o projeto responsivo,testei muitas propriedades, até reescrevi o código várias vezes até atingir o objetivo final, bem dizer passei a maior parte do projeto usando o DevTools.
+- Reproduzir layout proposto no Figma
+- Implementar responsividade para:
+  - Desktop
+  - Tablet
+  - Mobile
+- Trabalhar organização de CSS
+- Aplicar estrutura semântica no HTML
+- Utilizar Flexbox e Grid de forma combinada
 
-## Projeto Finalizado
+---
 
-![Print tela de pc](./prints-projeto/pc.png)
-![Print tela de tablet](./prints-projeto/tablet.png)
-![Print tela de celular](./prints-projeto/celular.png)
+## 🛠 Tecnologias Utilizadas
 
-## Conclusão
+- HTML5 Semântico
+- CSS3
+- Flexbox
+- CSS Grid
+- Variáveis CSS (`:root`)
+- Media Queries customizadas
+- Font Awesome (ícones)
 
-**Projeto bem desafiador pois foi a primeira vez que fiz um projeto com o layot responsivo, tenho conciência da extrema importância da responsividade nos projetos, afinal de contas todos que acessam nossas aplicações por diferentes tipos de tela, almejando ser um bom programador quero proporcionar a melhor experiência possível aos usuários que acessarem minhas aplicações , e atender a essa demanda com excelência requer uma atenção especial no quesito da responsividade, por conta disso dediquei horas revisando código, lendo documentações, assistindo aulas, e no final atingir o resultado esperado é muito gratificante, usarei todo o conhecimento que obtive com esse desafio para próximos desafios e projetos, ainda tenho muito a melhorar e aprender a cada dia.
+---
+
+## 📐 Estratégia de Responsividade
+
+O layout foi adaptado manualmente para três faixas principais:
+
+- Desktop
+- Tablet (768px – 1023px)
+- Mobile (≤ 768px)
+
+Foram aplicadas:
+
+- Reorganização de layout com `flex-direction`
+- Ajuste de grid
+- Redimensionamento de textos
+- Ocultação e exibição controlada de navegação
+- Implementação de botão hamburguer visual para mobile
+
+---
+
+## 🎨 Decisões Técnicas
+
+- Separação de responsabilidades:
+  - `reset.css` → padronização base
+  - `vars.css` → centralização de variáveis
+  - `styles.css` → layout principal
+  - `mediaqueries.css` → ajustes responsivos
+
+- Uso consistente de unidades relativas (`rem`, `%`)
+- Controle de espaçamento baseado no layout original
+- Minimização de repetição de propriedades
+- Uso combinado de Grid (macro layout) e Flexbox (componentes)
+
+---
+
+## 🖼 Preview
+
+### Desktop
+
+![Desktop](./prints-projeto/pc.png)
+
+### Tablet
+
+![Tablet](./prints-projeto/tablet.png)
+
+### Mobile
+
+![Mobile](./prints-projeto/celular.png)
+
+---
+
+## 📌 Observações
+
+Projeto desenvolvido com finalidade educacional, com foco na consolidação de conceitos de layout responsivo e organização estrutural de CSS sem frameworks.
